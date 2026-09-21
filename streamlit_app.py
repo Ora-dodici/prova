@@ -73,12 +73,13 @@ with st.container():
             "**2** posts &nbsp;&nbsp;&nbsp;&nbsp; **1,789** followers &nbsp;&nbsp;&nbsp;&nbsp; **312** following"
         )
 
-    # Bio section in English & Gaelic clues
+    # Bio section with English & Gaelic phrases
     st.markdown(
         "<b>A. M. MacMhìcheil</b><br>"
-        "🌧️ Living where the mist never clears.<br>"
-        "💬 I don't have a verb 'to have', I only have things that are 'at me'. ⛰️<br>"
+        "🌧️ <i>Mìneachadh:</i> Living where the mist never clears.<br>"
+        "💬 <i>'Tha cupa tì agam'</i>? No! I don't have a verb 'to have', I only have things that are <b>'at me'</b>! ⛰️<br>"
         "⚙️ My tea is always hot and my grammar strictly starts with the verb.<br>"
+        "🏴󠁧󠁢󠁳󠁣󠁴󠁿 <i>Còas a tha thu? Slàinte mhath!</i> 🥃<br>"
         "🔗 <i>linktr.ee/uisge_beatha</i>",
         unsafe_allow_html=True,
     )
@@ -88,22 +89,22 @@ with st.container():
     h1, h2, h3, h4 = st.columns(4)
     with h1:
         st.markdown(
-            "<div class='highlight-item'><div class='highlight-circle'>🥃</div>Pub</div>",
+            "<div class='highlight-item'><div class='highlight-circle'>🥃</div>Tigh-òsta</div>",
             unsafe_allow_html=True,
         )
     with h2:
         st.markdown(
-            "<div class='highlight-item'><div class='highlight-circle'>⛰️</div>Mist</div>",
+            "<div class='highlight-item'><div class='highlight-circle'>⛰️</div>Ceò</div>",
             unsafe_allow_html=True,
         )
     with h3:
         st.markdown(
-            "<div class='highlight-item'><div class='highlight-circle'>🪧</div>Road</div>",
+            "<div class='highlight-item'><div class='highlight-circle'>🪧</div>Rathad</div>",
             unsafe_allow_html=True,
         )
     with h4:
         st.markdown(
-            "<div class='highlight-item'><div class='highlight-circle'>🌧️</div>Rain</div>",
+            "<div class='highlight-item'><div class='highlight-circle'>🌧️</div>Uisge</div>",
             unsafe_allow_html=True,
         )
 
@@ -115,7 +116,7 @@ with st.container():
 
     # --- POST 1 ---
     st.markdown(
-        "<div class='post-card'><div class='post-header'>📍 The local pub, Highlands</div>",
+        "<div class='post-card'><div class='post-header'>📍 An Tigh-òsta (The local pub), Highlands</div>",
         unsafe_allow_html=True,
     )
 
@@ -129,8 +130,9 @@ with st.container():
 
     st.markdown(
         "<div class='post-footer'>"
-        "<strong>misty_highlander_99</strong> <em>Uisge beatha</em> for the soul, slowly sipping at the pub. 🥃<br>"
-        'Sometimes I look around and think: "There is a glass of whisky <em>at me</em>" (literally!). Quite a unique way to possess things, right? Deep syntax mysteries...<br><br>'
+        "<strong>misty_highlander_99</strong> <em>Slàinte mhath!</em> 🥃 Sorseggiando un po' di <em>Uisge beatha</em> for the soul.<br>"
+        '<i>Tha glainne whisky agam</i> = "There is a glass of whisky <em>at me</em>" (literally!). '
+        "Quite a unique way to possess things, right? Deep syntax mysteries... <i>Oidhche mhath!</i><br><br>"
         '<small style="color: #8e8e8e;">❤️ 342 likes &nbsp;&nbsp;&nbsp; 💬 45 comments</small>'
         "</div></div>",
         unsafe_allow_html=True,
@@ -149,8 +151,9 @@ with st.container():
 
     st.markdown(
         "<div class='post-footer'>"
-        "<strong>misty_highlander_99</strong> Bilingual road sign in a remote village: the top part is faded by heavy rain, while the bottom section displays broad vowels and aspirated consonants puzzling to outsiders! 🪧<br>"
-        "Whenever I speak, verbs always jump <strong>straight to the beginning of the sentence</strong> before the subject (VSO). No exceptions.<br><br>"
+        "<strong>misty_highlander_99</strong> <i>Fàilte gu àite iomallach!</i> (Welcome to a remote place!) 🪧<br>"
+        "Bilingual road sign out here: the top part is faded by heavy rain, while the bottom section displays broad vowels, slender consonants, and aspirated sounds puzzling to outsiders!<br>"
+        "Whenever I speak, verbs always jump <strong>straight to the beginning of the sentence</strong> (<i>Sgrìobh mi...</i> = Wrote I...). VSO word order always.<br><br>"
         '<small style="color: #8e8e8e;">❤️ 512 likes &nbsp;&nbsp;&nbsp; 💬 89 comments</small>'
         "</div></div>",
         unsafe_allow_html=True,
@@ -160,9 +163,15 @@ with st.container():
     with st.expander("🔍 [CLASSIFIED] Detective Debriefing & Clues"):
         st.markdown(
             """
-        * **Rules Followed:** No language name explicitly mentioned and no national flag displayed[cite: 2].
-        * **Clue 1 (No verb 'to have'):** References the Insular Celtic possession structure using "at me" (*aig*).
-        * **Clue 2 (VSO Word Order):** Verb-Subject-Object sentence structure placing the verb at the very beginning.
-        * **Clue 3 (*Uisge beatha*):** The etymological origin of the word *whisky* and guttural/aspirated sounds.
+        * **Rules Followed:** No language name explicitly mentioned and no national flags displayed[cite: 2].
+        * **Gaelic Expressions Embedded:** 
+            - *Slàinte mhath!* (Good health! / Toast)
+            - *Uisge beatha* (Water of life = Whisky)
+            - *Fàilte* (Welcome)
+            - *Tha... agam* (Structure for possession: "Is... at me")
+            - *Tigh-òsta* (Pub/Inn), *Ceò* (Mist), *Rathad* (Road), *Uisge* (Rain/Water)
+        * **Clue 1 (No verb 'to have'):** Uses the prepositional structure *"at me"* (*agam*).
+        * **Clue 2 (VSO Word Order):** Verb-Subject-Object structure (*Sgrìobh mi*).
+        * **Clue 3 (Phonetics):** Mentions broad/slender vowels and aspirated consonants.
         """
         )
