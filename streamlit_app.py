@@ -1,12 +1,12 @@
 import os
 import streamlit as st
 
-# Configurazione della pagina
+# Page configuration
 st.set_page_config(
     page_title="@misty_highlander_99 • Instagram", page_icon="📸", layout="centered"
 )
 
-# Stile CSS applicato in modo sicuro senza caratteri invisibili
+# Custom CSS styling
 css_style = """
 <style>
 .ig-container {
@@ -54,11 +54,11 @@ css_style = """
 st.markdown(css_style, unsafe_allow_html=True)
 
 with st.container():
-    # Intestazione Instagram
+    # Instagram Header
     col_avatar, col_info = st.columns([1, 2.5])
 
     with col_avatar:
-        # Carica automaticamente 'profile.jpg' se presente nel repository
+        # Load 'profile.jpg' if present in the repository, otherwise load fallback
         if os.path.exists("profile.jpg"):
             st.image("profile.jpg", width=110)
         else:
@@ -70,20 +70,20 @@ with st.container():
     with col_info:
         st.markdown("#### **misty_highlander_99** &nbsp; ✅")
         st.markdown(
-            "**2** post &nbsp;&nbsp;&nbsp;&nbsp; **1,789** followers &nbsp;&nbsp;&nbsp;&nbsp; **312** following"
+            "**2** posts &nbsp;&nbsp;&nbsp;&nbsp; **1,789** followers &nbsp;&nbsp;&nbsp;&nbsp; **312** following"
         )
 
-    # Bio del profilo con indizi linguistici
+    # Bio section in English & Gaelic clues
     st.markdown(
         "<b>A. M. MacMhìcheil</b><br>"
         "🌧️ Living where the mist never clears.<br>"
-        "💬 Non ho un verbo 'avere', ho solo cose che stanno 'presso' di me. ⛰️<br>"
-        "⚙️ Il mio tè è sempre caldo e la mia grammatica inizia sempre col verbo.<br>"
+        "💬 I don't have a verb 'to have', I only have things that are 'at me'. ⛰️<br>"
+        "⚙️ My tea is always hot and my grammar strictly starts with the verb.<br>"
         "🔗 <i>linktr.ee/uisge_beatha</i>",
         unsafe_allow_html=True,
     )
 
-    # Storie in evidenza (Highlights)
+    # Highlights
     st.markdown("<br>", unsafe_allow_html=True)
     h1, h2, h3, h4 = st.columns(4)
     with h1:
@@ -113,13 +113,12 @@ with st.container():
         unsafe_allow_html=True,
     )
 
-    # --- POST 1: Personaggio che sorseggia whisky al pub ---
+    # --- POST 1 ---
     st.markdown(
         "<div class='post-card'><div class='post-header'>📍 The local pub, Highlands</div>",
         unsafe_allow_html=True,
     )
 
-    # Carica automaticamente 'post1.jpg' se presente nel repository
     if os.path.exists("post1.jpg"):
         st.image("post1.jpg", use_container_width=True)
     else:
@@ -130,14 +129,14 @@ with st.container():
 
     st.markdown(
         "<div class='post-footer'>"
-        "<strong>misty_highlander_99</strong> <em>Uisge beatha</em> per l'anima, sorseggiando lentamente al pub. 🥃<br>"
-        'A volte mi guardo intorno e penso: "C\'è un bicchiere di whisky <em>a me</em>" (letteralmente!). Strano modo di possedere le cose, vero? Misteri della mia struttura sintattica profonda...<br><br>'
+        "<strong>misty_highlander_99</strong> <em>Uisge beatha</em> for the soul, slowly sipping at the pub. 🥃<br>"
+        'Sometimes I look around and think: "There is a glass of whisky <em>at me</em>" (literally!). Quite a unique way to possess things, right? Deep syntax mysteries...<br><br>'
         '<small style="color: #8e8e8e;">❤️ 342 likes &nbsp;&nbsp;&nbsp; 💬 45 comments</small>'
         "</div></div>",
         unsafe_allow_html=True,
     )
 
-    # --- POST 2: Cartello stradale bilingue remoto ---
+    # --- POST 2 ---
     st.markdown(
         "<div class='post-card'><div class='post-header'>📍 Ancoiste Magna (Remote Area)</div>",
         unsafe_allow_html=True,
@@ -150,20 +149,20 @@ with st.container():
 
     st.markdown(
         "<div class='post-footer'>"
-        "<strong>misty_highlander_99</strong> Cartello stradale bilingue in un luogo remoto: la parte superiore è sbiadita dalla pioggia battente, mentre quella inferiore mostra una dicitura ricca di vocali larghe e consonanti aspirate incomprensibile ai non addetti! 🪧<br>"
-        "Quando provo a presentarmi qui, i verbi saltano sempre <strong>all'inizio della frase</strong> prima ancora del soggetto (VSO). Nessuna eccezione.<br><br>"
+        "<strong>misty_highlander_99</strong> Bilingual road sign in a remote village: the top part is faded by heavy rain, while the bottom section displays broad vowels and aspirated consonants puzzling to outsiders! 🪧<br>"
+        "Whenever I speak, verbs always jump <strong>straight to the beginning of the sentence</strong> before the subject (VSO). No exceptions.<br><br>"
         '<small style="color: #8e8e8e;">❤️ 512 likes &nbsp;&nbsp;&nbsp; 💬 89 comments</small>'
         "</div></div>",
         unsafe_allow_html=True,
     )
 
     st.markdown("---")
-    with st.expander("🔍 [CLICCA QUI] Soluzione e Indizi per la Classe"):
+    with st.expander("🔍 [CLASSIFIED] Detective Debriefing & Clues"):
         st.markdown(
             """
-        * **Regole rispettate:** Nessun nome di lingua esplicito e nessuna bandiera nazionale[cite: 2].
-        * **Indizio 1 (Il verbo avere):** L'uso della costruzione possessiva con "presso di me".
-        * **Indizio 2 (Sintassi VSO):** I verbi che precedono sempre il soggetto e l'oggetto.
-        * **Indizio 3 (*Uisge beatha*):** L'origine etimologica del termine whisky e i suoni aspirati/gutturali.
+        * **Rules Followed:** No language name explicitly mentioned and no national flag displayed[cite: 2].
+        * **Clue 1 (No verb 'to have'):** References the Insular Celtic possession structure using "at me" (*aig*).
+        * **Clue 2 (VSO Word Order):** Verb-Subject-Object sentence structure placing the verb at the very beginning.
+        * **Clue 3 (*Uisge beatha*):** The etymological origin of the word *whisky* and guttural/aspirated sounds.
         """
         )
