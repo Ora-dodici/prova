@@ -79,7 +79,7 @@ with st.container():
         "🌧️ <i>Mìneachadh:</i> Living where the mist never clears.<br>"
         "💬 <i>'Tha cupa tì agam'</i>? No! I don't have a verb 'to have', I only have things that are <b>'at me'</b>! ⛰️<br>"
         "⚙️ My tea is always hot and my grammar strictly starts with the verb.<br>"
-        "🏴󠁧󠁢󠁳󠁣󠁴󠁿 <i>Còas a tha thu? Slàinte mhath!</i> 🥃<br>"
+        "<i>Còas a tha thu? Slàinte mhath!</i> 🥃<br>"
         "🔗 <i>linktr.ee/uisge_beatha</i>",
         unsafe_allow_html=True,
     )
